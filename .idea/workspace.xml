@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06870b98-445a-4a5a-a9e6-1364cb28ae34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/mystore/actionDriver/actionInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/actionDriver/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/actionDriver/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/base/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2tsedf1omuY4Ers1VynsqYGehQ4" />
@@ -48,7 +49,43 @@
       <recent name="com.mystore.actionDriver" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.LoginPageTest.LoginWithProblemUser">
+    <configuration name="LoginPageTest.LoginLockedOutUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mystore.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
+      <option name="METHOD_NAME" value="LoginLockedOutUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.LoginWithProblemUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mystore.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
+      <option name="METHOD_NAME" value="LoginWithProblemUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginPageTest.LoginusingstandardUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceApplication" />
       <extension name="coverage">
@@ -69,6 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginPageTest.LoginWithProblemUser" />
+        <item itemvalue="TestNG.LoginPageTest.LoginLockedOutUser" />
         <item itemvalue="TestNG.LoginPageTest.LoginusingstandardUser" />
       </list>
     </recent_temporary>
@@ -89,7 +128,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -100,7 +151,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java</url>
-          <line>37</line>
+          <line>43</line>
           <properties class="com.mystore.pageObjects.LoginPage" method="Login">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

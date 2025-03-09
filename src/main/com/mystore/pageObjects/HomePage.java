@@ -12,6 +12,9 @@ public class HomePage extends BaseClass {
     @FindBy(xpath = "//div[@class='app_logo']")
     WebElement HomePageLogo;
 
+    @FindBy(xpath = "//img[@alt='Sauce Labs Backpack']")
+    WebElement ImgElement;
+
 
 
     public HomePage(WebDriver driver) {
@@ -23,6 +26,10 @@ public class HomePage extends BaseClass {
     {
         String url=action.getCurrentURL(getDriver());
         return url;
+    }
+    public String getImageSrc()
+    {
+        return ImgElement.getDomAttribute("src");
     }
 
 

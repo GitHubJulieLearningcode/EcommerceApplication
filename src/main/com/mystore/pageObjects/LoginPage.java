@@ -2,6 +2,7 @@ package com.mystore.pageObjects;
 
 import com.mystore.actionDriver.Action;
 import com.mystore.base.BaseClass;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +29,11 @@ public class LoginPage extends BaseClass {
     @FindBy(xpath = "//div[@class='login_logo']")
     WebElement logo;
 
+    @FindBy(xpath="//button[@class=\"error-button\"]")
+    WebElement errorBtn;
+    @FindBy(xpath = "//h3[@data-test=\"error\"]")
+    WebElement error;
+
     // Constructor
     public LoginPage(WebDriver driver) {
         this.driver = driver;  // Ensure driver is retrieved properly
@@ -47,5 +53,9 @@ public class LoginPage extends BaseClass {
 
         // Wait for next page to load instead of Thread.sleep
         //wait.until(ExpectedConditions.urlContains("inventory.html"));
+    }
+    public String getAlert()
+    {
+        return error.getText();
     }
 }

@@ -1,5 +1,6 @@
 package com.mystore.testCases;
 
+import com.mystore.actionDriver.Action;
 import com.mystore.base.BaseClass;
 import com.mystore.pageObjects.HomePage;
 import com.mystore.pageObjects.LoginPage;
@@ -45,4 +46,25 @@ public class LoginPageTest extends BaseClass {
         String ExpectedUrl = "https://www.saucedemo.com/inventory.html";
         Assert.assertEquals(ActualUrl, ExpectedUrl);
     }
+    @Test(testName = "Login Using locked_out_user")
+    public void LoginLockedOutUser() throws Throwable
+    {
+        login.Login("locked_out_user",prop.getProperty("password"));
+        String ActualError=login.getAlert();
+        String ExpectedError="Epic sadface: Sorry, this user has been locked out.";
+        Assert.assertEquals(ActualError,ExpectedError);
+    }
+    @Test(testName = "Login using problem_user")
+    public void LoginWithProblemUser() throws Throwable
+    {
+        login.Login("problem_user",prop.getProperty("password"));
+        String ActualUrl = home.getHomePageUrl();
+        String ExpectedUrl = "https://www.saucedemo.com/inventory.html";
+        Assert.assertEquals(ActualUrl, ExpectedUrl);
+        String ActulImg=home.getImageSrc();
+        Assert.assertTrue(ActulImg.contains("sl-404.168b1cce.jpg"));
+
+    }
+
+
 }

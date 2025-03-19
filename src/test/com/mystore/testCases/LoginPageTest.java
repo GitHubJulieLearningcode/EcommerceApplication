@@ -65,6 +65,32 @@ public class LoginPageTest extends BaseClass {
         Assert.assertTrue(ActulImg.contains("sl-404.168b1cce.jpg"));
 
     }
+    @Test(testName = "Login using performance_glitch_user")
+    public void LoginwithPerformanceGlitchuser() throws  Throwable
+    {
+        login.Login("performance_glitch_user",prop.getProperty("password"));
+        String ActualUrl = home.getHomePageUrl();
+        String ExpectedUrl = "https://www.saucedemo.com/inventory.html";
+        Assert.assertEquals(ActualUrl, ExpectedUrl);
 
+    }
+    @Test(testName = "Login using error_user")
+    public void LoginwitherrorUser() throws Throwable
+    {
+
+        login.Login("error_user",prop.getProperty("password"));
+        String ActualUrl = home.getHomePageUrl();
+        String ExpectedUrl = "https://www.saucedemo.com/inventory.html";
+        Assert.assertEquals(ActualUrl, ExpectedUrl);
+    }
+    @Test(testName = "Login using visual_user")
+    public void LoginWithVisualUser() throws Throwable
+    {
+        login.Login("visual_user",prop.getProperty("password"));
+        String ActualUrl = home.getHomePageUrl();
+        String ExpectedUrl = "https://www.saucedemo.com/inventory.html";
+        Assert.assertEquals(ActualUrl, ExpectedUrl);
+
+    }
 
 }

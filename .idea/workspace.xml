@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06870b98-445a-4a5a-a9e6-1364cb28ae34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +49,8 @@
       <recent name="com.mystore.actionDriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest.LoginWithProblemUser">
-    <configuration name="LoginPageTest.LoginLockedOutUser" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomePageTest.filterbyNameA_Z">
+    <configuration name="HomePageTest.filterbyNameA_Z" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceApplication" />
       <extension name="coverage">
         <pattern>
@@ -59,8 +59,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.mystore.testCases" />
-      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
-      <option name="METHOD_NAME" value="LoginLockedOutUser" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.HomePageTest" />
+      <option name="METHOD_NAME" value="filterbyNameA_Z" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -86,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest.LoginusingstandardUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPageTest.LoginWithVisualUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceApplication" />
       <extension name="coverage">
         <pattern>
@@ -96,7 +96,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.mystore.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
-      <option name="METHOD_NAME" value="LoginusingstandardUser" />
+      <option name="METHOD_NAME" value="LoginWithVisualUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.LoginwithPerformanceGlitchuser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mystore.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
+      <option name="METHOD_NAME" value="LoginwithPerformanceGlitchuser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.LoginwitherrorUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mystore.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
+      <option name="METHOD_NAME" value="LoginwitherrorUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -106,9 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTest.filterbyNameA_Z" />
+        <item itemvalue="TestNG.LoginPageTest.LoginWithVisualUser" />
+        <item itemvalue="TestNG.LoginPageTest.LoginwitherrorUser" />
+        <item itemvalue="TestNG.LoginPageTest.LoginwithPerformanceGlitchuser" />
         <item itemvalue="TestNG.LoginPageTest.LoginWithProblemUser" />
-        <item itemvalue="TestNG.LoginPageTest.LoginLockedOutUser" />
-        <item itemvalue="TestNG.LoginPageTest.LoginusingstandardUser" />
       </list>
     </recent_temporary>
   </component>

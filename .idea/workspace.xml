@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06870b98-445a-4a5a-a9e6-1364cb28ae34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,25 @@
       <recent name="com.mystore.actionDriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTest.filterbyNameA_Z">
+  <component name="RunManager" selected="TestNG.HomePageTest.filterPricehigh_low">
+    <configuration name="HomePageTest.filterPricehigh_low" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mystore.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.HomePageTest" />
+      <option name="METHOD_NAME" value="filterPricehigh_low" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HomePageTest.filterbyNameA_Z" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceApplication" />
       <extension name="coverage">
@@ -68,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest.LoginWithProblemUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.filterbyNameZ_A" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceApplication" />
       <extension name="coverage">
         <pattern>
@@ -77,8 +94,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.mystore.testCases" />
-      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
-      <option name="METHOD_NAME" value="LoginWithProblemUser" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.HomePageTest" />
+      <option name="METHOD_NAME" value="filterbyNameZ_A" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.filterbyPricelow_high" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mystore.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.HomePageTest" />
+      <option name="METHOD_NAME" value="filterbyPricelow_high" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -104,49 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest.LoginwithPerformanceGlitchuser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EcommerceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mystore.testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
-      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
-      <option name="METHOD_NAME" value="LoginwithPerformanceGlitchuser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginPageTest.LoginwitherrorUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EcommerceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mystore.testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
-      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
-      <option name="METHOD_NAME" value="LoginwitherrorUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTest.filterPricehigh_low" />
+        <item itemvalue="TestNG.HomePageTest.filterbyPricelow_high" />
+        <item itemvalue="TestNG.HomePageTest.filterbyNameZ_A" />
         <item itemvalue="TestNG.HomePageTest.filterbyNameA_Z" />
         <item itemvalue="TestNG.LoginPageTest.LoginWithVisualUser" />
-        <item itemvalue="TestNG.LoginPageTest.LoginwitherrorUser" />
-        <item itemvalue="TestNG.LoginPageTest.LoginwithPerformanceGlitchuser" />
-        <item itemvalue="TestNG.LoginPageTest.LoginWithProblemUser" />
       </list>
     </recent_temporary>
   </component>

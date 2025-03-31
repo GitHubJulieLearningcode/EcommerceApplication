@@ -1,11 +1,14 @@
 package com.mystore.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import java.io.FileInputStream;
@@ -14,8 +17,14 @@ import java.util.Properties;
 
 public class BaseClass {
     public static Properties prop;
-    public static WebDriver driver;
+    private static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();  //Declare thread local for parallel execution
 
+
+    @BeforeSuite
+    public void beforeSuit()
+    {
+        DOMConfigurator.configure("log4j.xml");
+    }
     @BeforeTest
     public static void loadConfig() {
         try {
@@ -27,10 +36,12 @@ public class BaseClass {
             throw new RuntimeException("Failed to load configuration file");
         }
     }
-
-    public static WebDriver getDriver() {
-        return driver;
+    public static void setDriver(WebDriver driverInstance) {
+        driver.set((RemoteWebDriver) driverInstance);
     }
+    public static WebDriver getDriver() {
+        return driver.get();
+    } //get from thread local
 
     public static void launchBrowser() {
         if (prop == null) {
@@ -42,25 +53,25 @@ public class BaseClass {
         switch (browserName.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                driver.set(new ChromeDriver());
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+                driver.set(new FirefoxDriver());
                 break;
             case "ie":
                 WebDriverManager.iedriver().setup();
-                driver = new InternetExplorerDriver();
+                driver.set(new InternetExplorerDriver());
                 break;
             case "edge":
                 WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
+                driver.set(new EdgeDriver());
                 break;
             default:
                 throw new IllegalArgumentException("Invalid browser name: " + browserName);
         }
 
-        driver.manage().window().maximize();
-        driver.manage().deleteAllCookies();
+        getDriver().manage().window().maximize();
+        getDriver().manage().deleteAllCookies();
     }
 }

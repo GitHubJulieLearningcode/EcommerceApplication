@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06870b98-445a-4a5a-a9e6-1364cb28ae34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/mystore/Utility/log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/base/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +54,7 @@
       <recent name="com.mystore.actionDriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTest.filterPricehigh_low">
+  <component name="RunManager" selected="TestNG.LoginPageTest.LoginusingstandardUser">
     <configuration name="HomePageTest.filterPricehigh_low" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceApplication" />
       <extension name="coverage">
@@ -60,24 +66,6 @@
       <option name="PACKAGE_NAME" value="com.mystore.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.HomePageTest" />
       <option name="METHOD_NAME" value="filterPricehigh_low" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest.filterbyNameA_Z" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EcommerceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mystore.testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
-      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.HomePageTest" />
-      <option name="METHOD_NAME" value="filterbyNameA_Z" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,13 +127,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginPageTest.LoginusingstandardUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mystore.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.LoginPageTest" />
+      <option name="METHOD_NAME" value="LoginusingstandardUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginPageTest.LoginusingstandardUser" />
+        <item itemvalue="TestNG.LoginPageTest.LoginWithVisualUser" />
         <item itemvalue="TestNG.HomePageTest.filterPricehigh_low" />
         <item itemvalue="TestNG.HomePageTest.filterbyPricelow_high" />
         <item itemvalue="TestNG.HomePageTest.filterbyNameZ_A" />
-        <item itemvalue="TestNG.HomePageTest.filterbyNameA_Z" />
-        <item itemvalue="TestNG.LoginPageTest.LoginWithVisualUser" />
       </list>
     </recent_temporary>
   </component>
@@ -188,12 +194,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java</url>
-          <line>43</line>
+          <line>48</line>
           <properties class="com.mystore.pageObjects.LoginPage" method="Login">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,0 +1,9 @@
+2025-03-31 17:43:49 INFO  log:10 - =====================================01:Login using standard User TEST START=========================================
+2025-03-31 17:43:49 INFO  log:21 - entering Username and Password
+2025-03-31 17:43:49 INFO  log:21 - verifying user credential
+2025-03-31 17:43:49 INFO  log:14 - ===================================== TEST END=========================================
+2025-03-31 17:43:49 INFO  log:21 - end testcase
+2025-03-31 17:46:19 INFO  log:10 - =====================================01:Login using standard User TEST START=========================================
+2025-03-31 17:46:19 INFO  log:21 - Entering Username and Password
+2025-03-31 17:46:19 INFO  log:21 - Verifying login success: Checking if redirected to inventory page
+2025-03-31 17:46:19 INFO  log:14 - =====================================01:Login using standard User TEST END=========================================

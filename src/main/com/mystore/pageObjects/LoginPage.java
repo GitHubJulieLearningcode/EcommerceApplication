@@ -14,31 +14,36 @@ import java.time.Duration;
 
 public class LoginPage extends BaseClass {
     Action action = new Action();
-    WebDriver driver;
+
+    public LoginPage() {
+        // Ensure driver is retrieved properly
+        if (getDriver() == null) {
+            throw new IllegalStateException("WebDriver is not initialized. Call launchBrowser() before using page objects.");
+        }
+
+        PageFactory.initElements(getDriver(), this);
+    }
 
     // Web Elements using @FindBy annotation
     @FindBy(xpath = "//input[@id='user-name']")
-    WebElement UserName;
+    private WebElement UserName;
 
     @FindBy(xpath = "//input[@id='password']")
-    WebElement Password;
+    private WebElement Password;
 
     @FindBy(xpath = "//input[@id='login-button']")
-    WebElement signBtn;
+    private WebElement signBtn;
 
     @FindBy(xpath = "//div[@class='login_logo']")
-    WebElement logo;
+    private WebElement logo;
 
     @FindBy(xpath="//button[@class=\"error-button\"]")
-    WebElement errorBtn;
+    private WebElement errorBtn;
     @FindBy(xpath = "//h3[@data-test=\"error\"]")
-    WebElement error;
+    private WebElement error;
 
     // Constructor
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;  // Ensure driver is retrieved properly
-        PageFactory.initElements(driver, this);
-    }
+
 
     // Login Method
     public void Login(String uname, String pwd) throws Throwable
@@ -49,7 +54,7 @@ public class LoginPage extends BaseClass {
 //        action.scrollByVisibleElement(driver, UserName);
         action.type(UserName, uname);
         action.type(Password, pwd);
-        action.JSClick(driver, signBtn);
+        action.JSClick(getDriver(), signBtn);
 
         // Wait for next page to load instead of Thread.sleep
         //wait.until(ExpectedConditions.urlContains("inventory.html"));

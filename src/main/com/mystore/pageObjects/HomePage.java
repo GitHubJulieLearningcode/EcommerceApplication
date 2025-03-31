@@ -16,21 +16,26 @@ import java.util.List;
 
 public class HomePage extends BaseClass {
     Action action=new Action();
+
+    public HomePage() {
+        // Ensure driver is retrieved properly
+        if (getDriver() == null) {
+            throw new IllegalStateException("WebDriver is not initialized. Call launchBrowser() before using page objects.");
+        }
+        PageFactory.initElements(getDriver(), this);
+    }
     @FindBy(xpath = "//div[@class='app_logo']")
-    WebElement HomePageLogo;
+    private WebElement HomePageLogo;
 
     @FindBy(xpath = "//img[@alt='Sauce Labs Backpack']")
-    WebElement ImgElement;
+    private WebElement ImgElement;
 
     @FindBy(xpath ="//select[@class=\"product_sort_container\"]")
-    WebElement dropdown;
+    private WebElement dropdown;
 
 
 
-    public HomePage(WebDriver driver) {
-        this.driver = driver;  // Ensure driver is retrieved properly
-        PageFactory.initElements(driver, this);
-    }
+
 
     public String getHomePageUrl()
     {
@@ -57,7 +62,7 @@ public class HomePage extends BaseClass {
     }
     public List nameList()
     {
-        List<WebElement> elements = driver.findElements(By.xpath("//div[@class='inventory_item']"));
+        List<WebElement> elements = getDriver().findElements(By.xpath("//div[@class='inventory_item']"));
 
         // Print the number of elements found
         int l=elements.size();
@@ -65,7 +70,7 @@ public class HomePage extends BaseClass {
         ArrayList<String> list=new ArrayList<>();
         for(int i=1;i<=l;i++)
         {
-            WebElement element=driver.findElement(By.xpath("\n" +
+            WebElement element=getDriver().findElement(By.xpath("\n" +
                     "/html/body/div/div/div/div[2]/div/div/div/div["+i+"]/div[2]/div[1]/a/div"));
             list.add(element.getText());
 
@@ -75,13 +80,13 @@ public class HomePage extends BaseClass {
     }
     public List priceList()
     {
-        List<WebElement> elements = driver.findElements(By.xpath("//div[@class='inventory_item']"));
+        List<WebElement> elements = getDriver().findElements(By.xpath("//div[@class='inventory_item']"));
 
         int l=elements.size();
         ArrayList<String> list=new ArrayList<>();
         for(int i=1;i<=l;i++)
         {
-            WebElement element=driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/div/div/div["+i+"]/div[2]/div[2]/div"));
+            WebElement element= getDriver().findElement(By.xpath("/html/body/div/div/div/div[2]/div/div/div/div[" + i + "]/div[2]/div[2]/div"));
             list.add(element.getText());
 
         }

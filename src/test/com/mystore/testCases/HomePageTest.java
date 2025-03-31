@@ -26,14 +26,15 @@ public class HomePageTest extends BaseClass {
     @BeforeMethod
     public void setup() throws Throwable {
         // Load configuration
+        BaseClass.launchBrowser();
         loadConfig();  // Ensure `prop` is loaded before using it
         // Setup WebDriver
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.saucedemo.com/");
-        login = new LoginPage(driver);
-        home = new HomePage(driver);
+        //getDriver() = new ChromeDriver();
+        getDriver().manage().window().maximize();
+        getDriver().get("https://www.saucedemo.com/");
+        login = new LoginPage();
+        home = new HomePage();
         login.Login(prop.getProperty("username"), prop.getProperty("password"));
         // Initialize page objects after driver setup
 

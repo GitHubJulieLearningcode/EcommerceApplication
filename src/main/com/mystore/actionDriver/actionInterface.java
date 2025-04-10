@@ -82,4 +82,5 @@ public interface actionInterface {
     void pageLoadTimeOut(WebDriver driver, int timeOut);
 
     String getCurrentTime();
+    String screenShot(WebDriver driver, String filename);
 }

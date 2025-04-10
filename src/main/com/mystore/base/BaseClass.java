@@ -1,5 +1,6 @@
 package com.mystore.base;
 
+import com.mystore.Utility.extentManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -8,10 +9,12 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -21,19 +24,23 @@ public class BaseClass {
 
 
     @BeforeSuite
-    public void beforeSuit()
-    {
+
+    public static void loadConfig() throws IOException {
+        if (extentManager.getExtent() == null) {
+            extentManager.setExtent();
+        }
         DOMConfigurator.configure("log4j.xml");
-    }
-    @BeforeTest
-    public static void loadConfig() {
+
         try {
             prop = new Properties();
-            FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/Configuration/config.properties");
+            FileInputStream ip = new FileInputStream(
+                    System.getProperty("user.dir") + "\\Configuration\\config.properties");
             prop.load(ip);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-            throw new RuntimeException("Failed to load configuration file");
         }
     }
     public static void setDriver(WebDriver driverInstance) {
@@ -43,7 +50,7 @@ public class BaseClass {
         return driver.get();
     } //get from thread local
 
-    public static void launchBrowser() {
+    public static void launchBrowser() throws IOException {
         if (prop == null) {
             loadConfig();  // Ensure properties are loaded before using them
         }
@@ -73,5 +80,10 @@ public class BaseClass {
 
         getDriver().manage().window().maximize();
         getDriver().manage().deleteAllCookies();
+    }
+    @AfterSuite
+    public  void afterSuit()
+    {
+        //extentManager.endReport();
     }
 }

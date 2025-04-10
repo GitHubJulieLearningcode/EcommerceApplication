@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06870b98-445a-4a5a-a9e6-1364cb28ae34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/mystore/Utility/log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extent-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/mystore/Utility/ListenerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/mystore/Utility/extentManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/log4j.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/actionDriver/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/actionDriver/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/actionDriver/actionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/actionDriver/actionInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/mystore/base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/base/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/mystore/pageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/mystore/testCases/LoginPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,19 +43,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.mystore.actionDriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest.LoginusingstandardUser">
+  <component name="RunManager" selected="TestNG.C:/Users/julie/IdeaProjects/EcommerceApplication/testing_All.xml">
+    <configuration name="C:/Users/julie/IdeaProjects/EcommerceApplication/testing_All.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceApplication" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testing_All.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HomePageTest.filterPricehigh_low" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceApplication" />
       <extension name="coverage">
@@ -66,24 +78,6 @@
       <option name="PACKAGE_NAME" value="com.mystore.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.HomePageTest" />
       <option name="METHOD_NAME" value="filterPricehigh_low" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest.filterbyNameZ_A" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EcommerceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mystore.testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mystore.testCases" />
-      <option name="MAIN_CLASS_NAME" value="com.mystore.testCases.HomePageTest" />
-      <option name="METHOD_NAME" value="filterbyNameZ_A" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -147,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/julie/IdeaProjects/EcommerceApplication/testing_All.xml" />
         <item itemvalue="TestNG.LoginPageTest.LoginusingstandardUser" />
         <item itemvalue="TestNG.LoginPageTest.LoginWithVisualUser" />
         <item itemvalue="TestNG.HomePageTest.filterPricehigh_low" />
         <item itemvalue="TestNG.HomePageTest.filterbyPricelow_high" />
-        <item itemvalue="TestNG.HomePageTest.filterbyNameZ_A" />
       </list>
     </recent_temporary>
   </component>
